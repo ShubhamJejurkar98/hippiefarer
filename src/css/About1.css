@@ -1,0 +1,51 @@
+#about{
+  background: rgb(232, 232, 232);
+
+}
+.aboutContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+}
+.aboutPhoto{
+  display: flex;
+  max-width: 500px;
+  max-height: 700px;
+}
+@media only screen and (max-width: 786px) {
+  .aboutPhoto{
+    max-width: 90%;
+  }
+}
+.aboutPhoto img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.aboutContainer #aboutContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: rgb(26, 26, 26);
+  max-width: 40rem;
+}
+.aboutTitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.aboutDesc {
+  font-size: 17px;
+  line-height: 2rem;
+  text-align: justify;
+}
+.aboutName{
+  font-size: 1.5rem;
+}
+.aboutName text{
+  font-size: 17px;
+}

@@ -1,0 +1,35 @@
+     .singlecol {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: center;
+         gap: 3rem;
+         padding: 1rem;
+         
+     }
+
+     .social-media-icons a {
+         color: whitesmoke;
+         font-size: 1.7rem;
+         transition: color 0.3s ease;
+     }
+
+    .youtube-link:hover {
+         color: #ff0000;
+     }
+
+     .instagram-link:hover {
+        color: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        color: #da489b;
+      }
+      .twitter-link:hover {
+        color: #333333;
+    }
+      .linkedin-link:hover {
+         color: #1385c3;
+     }
+
+    .github-link:hover {
+        color: #1f1f1f;
+    }
+
+

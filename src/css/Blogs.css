@@ -1,0 +1,73 @@
+
+.containerSection {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111314;
+  
+}
+.containerSection h1{
+  color: whitesmoke;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  max-width: 90%;
+  margin-bottom: 2rem;
+}
+
+.container img {
+  width: 50%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.box {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.box p{
+  line-height: 30px;
+  font-size: 17px;
+  text-align: justify;
+}
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navigation-buttons button {
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  transform: scale(1.2);
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 767px) {
+  .container{
+    flex-direction: column;
+  }
+  .container:nth-child(odd) {
+    flex-direction: column-reverse; /* Reverse the order for odd indices on smaller screens */
+  }
+
+  .container img{
+    width: 100%;
+    max-width: none;
+  }
+}
+
+  

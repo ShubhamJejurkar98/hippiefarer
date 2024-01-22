@@ -1,0 +1,134 @@
+.contactSection {
+    /* margin: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem; */
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.contactHeading {
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+.border{
+    display: flex;
+    justify-content: center;
+    max-width: 70rem;
+    height: 4px;
+    background: #cdf6ff;
+    margin: 20px auto;
+  }
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.leftContent {
+    background: rgba(255, 255, 255, 0.896);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1f1f1f;
+    border-radius: 15px;
+}
+
+.leftContent h2{
+    font-size: 1.8rem;
+    margin-bottom: 2px;
+}
+.leftContent .SocialMedia{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.SocialMedia span{
+    margin-bottom: 5px;
+}
+.SocialMedia .icons{
+    display: flex;
+    gap:40px;
+}
+.iconLink{
+    font-size: 1.7rem;
+    color: #1f1f1f;
+    transition: 0.3s ease-in;
+}
+.iconLink:hover{
+    transform: scale(1.3);
+}
+.titledesc{
+   margin: 1rem;
+   text-align: center;
+}
+.contactInfo .infoItem {
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.infoItem .icon {
+    margin-right: 20px;
+}
+
+.icon>svg {
+    width: 35px;
+    height: 35px;
+}
+
+.infoItem .details span {
+    display: block;
+}
+
+.rightContent {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    border-radius: 15px;
+    color: #fff;
+    padding: 2rem;
+   
+}
+
+.contactForm input,
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    width: 100%;
+    margin: 8px 0;
+    font-size: 0.8rem;
+    background: #1f1f1f; 
+    outline: none;
+    color: #ddd;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 100px; 
+    resize: none;
+}
+.contactForm .contactFormBtn {
+    background: rgba(255, 255, 255, 0.896); 
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 8px 0;
+}

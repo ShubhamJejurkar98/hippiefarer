@@ -1,0 +1,67 @@
+.galleryContainer{
+  width: 90%;
+  margin: 0 auto;
+}
+.galleryContainer h1{
+  font-size: 38px;
+  text-align: center;
+  color: whitesmoke;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.image-gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+.categoryButtons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.categoryButtons button {
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+/*styles for the "Load More" button */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.load-more-button {
+  color: #090909;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background: #212121;
+  color: #e8e8e8;
+}

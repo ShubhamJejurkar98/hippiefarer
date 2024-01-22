@@ -1,0 +1,99 @@
+.blogSection {
+  position: relative;
+  background-color: rgb(26, 26, 26);
+}
+
+.blogSection h1 {
+  font-size: 38px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.blogCards {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.blogCard {
+  width: calc(33.33% - 20px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(40, 40, 40);
+  color: whitesmoke;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.blogCard img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.blogContent {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.blogContent h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.blogContent p {
+  font-size: 17px;
+}
+
+.blogContent a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: #090909;
+  transition: all 250ms;
+  border: 1px solid #e8e8e8;
+}
+.blogContent a:hover{
+  background: #212121;
+  color: #e8e8e8;
+  
+}
+/* .viewAllContainer {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.ViewAll {
+  color: #090909;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 250ms;
+}
+
+ .ViewAll:hover {
+  background: #212121;
+  color: #e8e8e8;
+ } */
+ 
+@media  screen and (max-width: 998px){
+  .blogCards{
+    flex-direction: column;
+}
+.blogCard{
+  width: calc(100% - 0px);
+}
+
+}
