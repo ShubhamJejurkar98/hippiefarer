@@ -80,6 +80,7 @@ const Blogs = () => {
 
 
   return (
+
     <div className='containerSection'>
       <div className='navigation-buttons'>
         <button onClick={() => handlePrevNext('prev')}><FontAwesomeIcon icon={faCircleArrowLeft} /></button>
