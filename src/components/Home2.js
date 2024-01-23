@@ -92,8 +92,8 @@ const Home = React.memo(() => {
                     </div>
 
                     <button onClick={nextSlide} className="carouselArrow next"><FontAwesomeIcon icon={faChevronRight} /></button>
-
-                    <ul className="carouselIndicators">
+                                    
+                    <div className="carouselIndicators">
                         {imageUrls.map((_, index) => (
                             <ul
                                 key={index}
@@ -101,7 +101,7 @@ const Home = React.memo(() => {
                                 className={index === imageIndex ? 'active' : ''}
                             />
                         ))}
-                    </ul>
+                    </div>
 
                 </div>
 
