@@ -68,7 +68,7 @@ function ImageGallery() {
 
   ];
   useEffect(() => {
-    console.log('Landscapes component mounted');
+    // console.log('Landscapes component mounted');
     const fetchImageUrls = async () => {
       try {
         const urls = await Promise.all(
@@ -87,7 +87,7 @@ function ImageGallery() {
     fetchImageUrls();
 
     return () => {
-      console.log('Component unmounted');
+      // console.log('Component unmounted');
     };
   }, []);
 

@@ -8,10 +8,9 @@ import Landscapes from './Landscapes'
 import About from './About1'
 import Skills from './Skills'
 import Contact from './Contact2'
-import Footer from './Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import ScrollToTopButton from './ScrollToTopButton'
+
 
 
 
@@ -27,9 +26,9 @@ const Home = React.memo(() => {
       'images/Kinnaur/DSC08790 copy.webp',
       'images/Maharashtra/fireflies1.webp',
     ];
-  
+
     useEffect(() => {
-      console.log('Home component mounted');
+    //   console.log('Home component mounted');
       
       const fetchImageUrls = async () => {
         try {
@@ -49,7 +48,7 @@ const Home = React.memo(() => {
       fetchImageUrls();
   
       return () => {
-        console.log('Home component unmounted');
+        // console.log('Home component unmounted');
       };
     }, []); 
 
@@ -85,7 +84,9 @@ const Home = React.memo(() => {
                                         key={index}
                                         src={url}
                                         alt={`${index}`}
+                                        loading='lazy'
                                         className={`carouselImage ${index === imageIndex ? 'active' : ''}`} />
+                                        
                                 ))}
                             </div>
                         )}
@@ -117,8 +118,6 @@ const Home = React.memo(() => {
             <About />
             <Skills />
             <Contact />
-            <Footer />
-            <ScrollToTopButton />
         </>
     );
 })
