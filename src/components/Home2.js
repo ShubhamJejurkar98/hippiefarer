@@ -15,6 +15,7 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons
 
 
 const Home = React.memo(() => {
+
     const [imageIndex, setImageIndex] = useState(0);
     const [imageUrls, setImageUrls] = useState([]);
   
@@ -28,7 +29,7 @@ const Home = React.memo(() => {
     ];
 
     useEffect(() => {
-    //   console.log('Home component mounted');
+    //console.log('Home component mounted');
       
       const fetchImageUrls = async () => {
         try {
@@ -116,7 +117,6 @@ const Home = React.memo(() => {
             <Blogcard />
             <Landscapes />
             <About />
-            <Skills />
             <Contact />
         </>
     );

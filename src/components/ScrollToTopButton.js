@@ -20,6 +20,7 @@ function ScrollToTopButton() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+    
   }, []); 
 
   const scrollToTop = () => {
